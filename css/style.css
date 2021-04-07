@@ -1,0 +1,397 @@
+/* montserrat-regular - latin */
+@font-face {
+ font-family: "Montserrat";
+ font-style: normal;
+ font-weight: 400;
+ src: local(""),
+  url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"),
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+   url("../fonts/montserrat-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+ font-family: "Montserrat";
+ font-style: normal;
+ font-weight: 500;
+ src: local(""), url("../fonts/montserrat-v15-latin-500.woff2") format("woff2"),
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+   url("../fonts/montserrat-v15-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+ font-family: "Montserrat";
+ font-style: normal;
+ font-weight: 600;
+ src: local(""), url("../fonts/montserrat-v15-latin-600.woff2") format("woff2"),
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+   url("../fonts/montserrat-v15-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+ font-family: "Montserrat";
+ font-style: normal;
+ font-weight: 700;
+ src: local(""), url("../fonts/montserrat-v15-latin-700.woff2") format("woff2"),
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+   url("../fonts/montserrat-v15-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* raleway-600 - latin */
+@font-face {
+ font-family: "Raleway";
+ font-style: normal;
+ font-weight: 600;
+ src: local(""), url("../fonts/raleway-v19-latin-600.woff2") format("woff2"),
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+   url("../fonts/raleway-v19-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* raleway-700 - latin */
+@font-face {
+ font-family: "Raleway";
+ font-style: normal;
+ font-weight: 700;
+ src: local(""), url("../fonts/raleway-v19-latin-700.woff2") format("woff2"),
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+   url("../fonts/raleway-v19-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* REGLES GENERALES */
+
+:root {
+    --primary: #F16822;
+    --font-color: #333333;
+    --light-font-color: #EEEEEE;
+    --footer-font-color: #CCCCCC;
+
+}
+body{
+    font-family: Montserrat, sans-serif;
+    color: var(--font-color);
+}
+.container-repere-slider{
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    margin: auto;
+}
+
+.repere-slider{
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--font-color);
+
+}
+
+h2{
+    font-size: 4.8rem;
+    font-family: Raleway;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Layout */
+
+.slider, .services, .about, .posts, .chiffres, .auteurs{
+    padding-top: 17rem;
+    padding-bottom: 17rem;
+}
+
+.container{
+  width: 100%;
+  max-width: 128rem;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.small-container{
+    padding-top: 4rem;
+    width: 100%;
+    max-width: 104rem;
+    text-align: center;
+    margin: auto;
+}
+
+/* Header */
+.logo p{
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+}
+.logo{
+    display: flex;
+}
+.logo p span{
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+.main-header .container{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-header .container ul{
+    display: flex;
+}
+.nav-item{
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+.nav-lien{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: block;
+    color: var(--font-color);
+}
+.nav-lien:hover{
+    background-color: var(--primary);
+    color: white;
+}
+/* Slider */
+
+h1{
+    text-align: center;
+    font-size: 6.4rem;
+    color: var(--primary);
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+}
+
+.slider{
+    background-image: url(../img/slider1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 8rem;
+}
+.slider .container{
+    position: relative;
+}
+.slider .small-container{
+    font-size: 3.4rem;
+    margin-bottom: 23rem ;
+}
+.slider-button-next, .slider-button-prev{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 0rem;
+}
+.slider-button-prev{
+    right: auto;
+    left: 0rem;
+}
+
+/* Services */
+
+.list-services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.services .small-container{
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+}
+.services-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.services-img h3{
+    font-family: Raleway;
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+}
+.services-img p{
+    line-height: 2;
+}
+.background-s-img{
+    display: flex;
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: var(--light-font-color);
+    border-radius: 50%;
+}
+.background-s-img img{
+    margin: auto;
+}
+
+/* About */
+
+.about{
+    background-image: url(../img/bokehback.jpg);
+    background-size: cover;
+    padding-bottom: 0rem;
+    color: var(--light-font-color);
+}
+.about .container img{
+    margin: auto;
+    margin-top: 17rem;
+}
+
+.about-title{
+    color: var(--primary);
+}
+.about .repere-slider{
+    background-color: var(--light-font-color);
+}
+.about .small-container{
+    font-size: 2.4rem;
+}
+
+
+/* Posts */
+.posts{
+    background-color: #F9F9F9;
+}
+.posts .small-container{
+    font-size: 2.4rem;
+    margin-bottom: 11.5rem;
+}
+.posts-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+.posts-item{
+    padding: 2.5rem;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    text-align: center;
+    line-height: 2;
+}
+.posts-item h3{
+    font-family: Raleway;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 4rem;
+    margin-top: 7rem;
+}
+
+/* Chiffres */
+
+.chiffres{
+    position: relative;
+}
+.chiffres .container{
+    position: relative;
+    z-index: 2;
+}
+
+.chiffres:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url(../img/lauren-mancke-aOC7TSLb1o8-unsplash-1.jpg);
+    background-size: cover;
+}
+ul.chiffres-list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    margin-top: 5rem;
+}
+.chiffres-item p{
+    font-size: 6.4rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+.chiffres-item p span{
+    display: block;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+/* Auteurs */
+
+.auteurs{
+    background-image: url(../img/rect.jpg);
+    background-size: cover;
+    padding-bottom: 8rem;
+}
+.auteurs-article{
+    display: flex;
+    color: var(--light-font-color);
+}
+h2.auteurs-title{
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+}
+.auteurs-article div{
+    display: block;
+}
+.auteurs-article img{
+    border-radius: 50%;
+    margin-right: 5rem;
+}
+
+/* Footer */
+
+.main-footer{
+    background-color: var(--font-color);
+    padding-top: 11rem;
+    color: var(--footer-font-color);
+}
+.footer-nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-nav a{
+    color: var(--footer-font-color);
+}
+.footer-nav h2{
+    font-size: 2.4rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-align: left;
+}
+.footer-nav .item-nav{
+    line-height: 2;
+}
+.footer-list-tags{
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+.footer-tags{
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    background-color: #444444;
+}
+.footer-list-contact{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.copiright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 5;
+    border-top: 1px solid var(--footer-font-color);
+    margin-top: 10rem;
+}
+.copiright .footer-list{
+    display: flex;
+    gap: 2rem;
+
+}
