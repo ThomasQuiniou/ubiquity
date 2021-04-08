@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Ubiquity</title>
@@ -11,11 +13,13 @@
 <body>
     <header class="main-header">
         <div class="container">
+
             <div class="logo">
                 <img src="./img/LOGO.svg" alt="logo">
                 <p>Ubiquity<span>Professionnel Web UI</span></p>
             </div>
             <nav class="main-nav">
+                <input type="checkbox" name="checkbox" id="check">
                 <ul class="list-nav">
                     <li class="nav-item"><a class="nav-lien" href="#">home</a></li>
                     <li class="nav-item"><a class="nav-lien" href="#">about</a></li>
@@ -24,6 +28,10 @@
                     <li class="nav-item"><a class="nav-lien" href="#">contact</a></li>
                 </ul>
             </nav>
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
         </div>
     </header>
     <section class="slider">
@@ -59,7 +67,9 @@
         </div>
         <div class="container">
             <p class="small-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quia ipsam totam iusto sunt possimus voluptates, distinctio culpa veritatis officiis, fugiat iure eum assumenda enim, architecto amet. Facilis, corporis repellat.</p>
-            <ul class="list-services">
+            <ul data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" class="list-services">
                 <li class="services-item">
                     <figure class="services-img">
                         <div class="background-s-img">
@@ -120,35 +130,51 @@
             <div class="repere-slider"></div>
             <div class="repere-slider"></div>
         </div>
+
+
+
+
         <div class="container">
             <p class="small-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nam quaerat.</p>
             <ul class="posts-list">
-                <li class="posts-item">
+                <li data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" class="posts-item">
                     <img src="./img/annie-spratt-wgivdx9dBdQ-unsplash-1.jpg" alt="Photo d'ordinateur">
                     <h3>Blog Title</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nulla. Cumque exercitationem error maiores! Autem!</p>
                 </li>
-                <li class="posts-item">
+                <li data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" class="posts-item">
                     <img src="./img/william-iven-SpVHcbuKi6E-unsplash.jpg" alt="Photo d'ordinateur">
                     <h3>Title of the Blog</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nulla. Cumque exercitationem error maiores! Autem!</p>
                 </li>
-                <li class="posts-item">
+                <li data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" class="posts-item">
                     <img src="./img/green-chameleon-s9CC2SKySJM-unsplash.jpg" alt="Photo d'ordinateur">
                     <h3>Title of the Blog</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nulla. Cumque exercitationem error maiores! Autem!</p>
                 </li>
-                <li class="posts-item">
+                <li data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" class="posts-item">
                     <img src="img/helloquence-5fNmWej4tAA-unsplash.jpg" alt="Photo d'ordinateur">
                     <h3>Blog Title</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nulla. Cumque exercitationem error maiores! Autem!</p>
                 </li>
-                <li class="posts-item">
+                <li data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" class="posts-item">
                     <img src="img/lauren-mancke-aOC7TSLb1o8-unsplash.jpg" alt="">
                     <h3>Blog Title</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nulla. Cumque exercitationem error maiores! Autem!</p>
                 </li>
-                <li class="posts-item">
+                <li data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" class="posts-item">
                     <img src="./img/annie-spratt-wgivdx9dBdQ-unsplash.jpg" alt="Photo d'ordinateur">
                     <h3>Blog Title</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nulla. Cumque exercitationem error maiores! Autem!</p>
@@ -259,5 +285,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
