@@ -124,6 +124,7 @@ h2{
 .logo p{
     font-family: Raleway, sans-serif;
     font-weight: bold;
+    padding-left: 1rem;
 }
 .logo{
     margin-top: 3.5rem;
